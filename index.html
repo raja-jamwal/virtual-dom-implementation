@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VDOM test</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="root"></div>
+<script src="utils.js"></script>
+<script src="vdom.js"></script>
+<script type="text/javascript" src="flickr.js"></script>
+<script type="text/javascript">
+    var $root = document.querySelector("#root");
+
+    // boot strap flickr app here
+    flickr.flickrApp($root);
+
+    window.onscroll = function(ev) {
+        flickr.sliceOutOfViewport();
+    };
+</script>
+</body>
+</html>
