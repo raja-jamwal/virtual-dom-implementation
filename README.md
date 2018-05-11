@@ -2,7 +2,9 @@
 This is proof of concept virtual dom implementation just like react written in pure javascript in under 100 lines.
 
 -- vdom.js: contains implementation for the virtual dom
+
 -- flickr.js: sample flickr app implemented using the given vdom implmentation
+
 -- util.js: generic utils function
 
 Just run index.html, you should see a minimal flickr like implementation.
